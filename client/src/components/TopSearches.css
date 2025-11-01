@@ -1,0 +1,47 @@
+.top-searches-banner {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.8rem 0;
+  font-size: 0.9rem;
+}
+
+.top-searches-banner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trending-label {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.search-terms {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 0.2rem 0;
+}
+
+.search-term {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  backdrop-filter: blur(10px);
+}
+
+.search-count {
+  opacity: 0.8;
+  font-size: 0.8em;
+}
+
+.top-searches-loading {
+  text-align: center;
+  padding: 0.8rem;
+  background: #f8f9fa;
+  color: #666;
+}
