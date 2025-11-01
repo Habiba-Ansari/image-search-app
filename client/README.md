@@ -102,3 +102,17 @@ npm start
 ![Search History](./screenshots/history.png)
 ![Image Download](./screenshots/download.png)
 
+
+## API Testing
+
+### Example cURL commands:
+# 1. Get top searches (public - no auth needed)
+curl http://localhost:5000/api/search/top-searches
+
+# 2. Search images (requires login - use after OAuth)
+curl -X POST http://localhost:5000/api/search \
+  -H "Content-Type: application/json" \
+  -d '{"term": "mountains"}'
+
+# 3. Get user search history (requires login)
+curl http://localhost:5000/api/search/history
